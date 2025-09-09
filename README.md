@@ -20,3 +20,8 @@ Breve descripción: Soy DANIA CONDORI MARTINEZ, estudiante del segundo semestre 
 - Foco visible: estilos :focus claros en enlaces y botones para navegación por teclado.
 - Imágenes con alt descriptivo para usuarios de lector de pantalla.
 - Probado con teclado (tab) y con Lighthouse (DevTools) para validar navegación.
+## SEO
+1. Título claro y único que incluye la marca.
+2. Meta description de 156 caracteres para SERP.
+3. Open Graph básicos para compartir en redes (og:title, og:description, og:image).
+4. Estructura semántica con H1/H2 para que motores entiendan la jerarquía.

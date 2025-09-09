@@ -3,17 +3,27 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+  
+  <!-- Título único -->
   <title>MANACO — Calzado que impulsa tu paso</title>
+  
+  <!-- Meta description (156 caracteres) -->
+  <meta name="description" content="MANACO ofrece calzado cómodo, duradero y con estilo para cada paso. Descubre colecciones para diario y deporte, compra fácil y envío rápido en todo el país.">
+  
+  <!-- Open Graph básicos -->
+  <meta property="og:title" content="MANACO — Calzado que impulsa tu paso">
+  <meta property="og:description" content="Calzado cómodo, duradero y con estilo. Compra fácil y envío rápido en todo el país.">
+  <meta property="og:image" content="assets/og-image.jpg">
+  
   <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-  <!-- Skip link -->
+  <!-- Skip link (a11y) -->
   <a href="#main" class="skip-link">Saltar al contenido principal</a>
 
   <header class="site-header">
     <div class="header-inner">
       <h2 class="logo">MANACO</h2>
-      <!-- botón accesible para menú -->
       <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">☰</button>
       <nav id="site-nav" aria-label="Navegación principal">
         <ul>
@@ -26,6 +36,7 @@
   </header>
 
   <main id="main">
+    <!-- H1 único para toda la página -->
     <section class="hero" aria-label="Banner principal">
       <h1>Calzado que impulsa tu paso</h1>
     </section>
@@ -71,4 +82,3 @@
   </footer>
 </body>
 </html>
-
