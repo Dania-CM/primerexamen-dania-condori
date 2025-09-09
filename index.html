@@ -3,23 +3,19 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>MANACO — CALZADO QUE IMPULSA TU PASO</title>
-  <meta name="description" content="MANACO ofrece calzado cómodo, duradero y con estilo para cada paso. Descubre colecciones para diario y deporte, compra fácil y envío rápido en todo el país.">
-  <!-- Open Graph mínimos -->
-  <meta property="og:title" content="MANACO — Calzado que impulsa tu paso">
-  <meta property="og:description" content="MANACO ofrece calzado cómodo, duradero y con estilo para cada paso.">
-  <meta property="og:image" content="assets/og-image.jpg">
+  <title>MANACO — Calzado que impulsa tu paso</title>
   <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-  
-  <a class="skip-link" href="#main">Saltar al contenido</a>
+  <!-- Skip link -->
+  <a href="#main" class="skip-link">Saltar al contenido principal</a>
 
   <header class="site-header">
     <div class="header-inner">
-      <h2 class="logo">MANACO</h2> 
+      <h2 class="logo">MANACO</h2>
+      <!-- botón accesible para menú -->
       <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">☰</button>
-      <nav id="site-nav" class="site-nav" aria-label="Navegación principal">
+      <nav id="site-nav" aria-label="Navegación principal">
         <ul>
           <li><a href="#main">Inicio</a></li>
           <li><a href="#productos">Servicios</a></li>
@@ -31,7 +27,7 @@
 
   <main id="main">
     <section class="hero" aria-label="Banner principal">
-      <h1>Calzado que impulsa tu paso</h1> 
+      <h1>Calzado que impulsa tu paso</h1>
     </section>
 
     <section id="productos" aria-labelledby="productos-title">
@@ -45,7 +41,6 @@
             <button class="buy">Comprar</button>
           </article>
         </li>
-
         <li>
           <article>
             <img src="assets/producto2.jpg" alt="Zapato casual modelo Y, color marrón">
@@ -54,7 +49,6 @@
             <button class="buy">Comprar</button>
           </article>
         </li>
-
         <li>
           <article>
             <img src="assets/producto3.jpg" alt="Sandalia cómoda modelo Z, talles 36 a 41">
@@ -75,16 +69,6 @@
   <footer>
     <p class="copyright">Copyright 2025 MANACO</p>
   </footer>
-
-  <script>
-    // script para menú
-    const btn = document.querySelector('.menu-toggle');
-    const nav = document.getElementById('site-nav');
-    btn && btn.addEventListener('click', () => {
-      const expanded = btn.getAttribute('aria-expanded') === 'true';
-      btn.setAttribute('aria-expanded', String(!expanded));
-      nav.style.display = expanded ? '' : 'block';
-    });
-  </script>
 </body>
 </html>
+

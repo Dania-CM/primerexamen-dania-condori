@@ -15,3 +15,8 @@ Breve descripción: Soy DANIA CONDORI MARTINEZ, estudiante del segundo semestre 
 - H1 único y jerarquía correcta (H2 para secciones).
 
 (Envío final: GitHub Pages desplegado desde la rama `main`.)
+## Accesibilidad (a11y)
+- Skip link: permite saltar al contenido principal (href="#main").
+- Foco visible: estilos :focus claros en enlaces y botones para navegación por teclado.
+- Imágenes con alt descriptivo para usuarios de lector de pantalla.
+- Probado con teclado (tab) y con Lighthouse (DevTools) para validar navegación.

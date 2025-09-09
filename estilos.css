@@ -1,0 +1,28 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Skip link: oculto pero visible al enfocar */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: auto;
+  background: #fff;
+  padding: 8px;
+  border: 2px solid #000;
+  z-index: 100;
+}
+.skip-link:focus {
+  left: 10px;
+  top: 10px;
+}
+
+/* Foco visible en enlaces y botones */
+a:focus,
+button:focus {
+  outline: 3px solid blue;
+  outline-offset: 3px;
+}
