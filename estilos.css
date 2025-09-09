@@ -1,28 +1,102 @@
-/* Reset básico */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Skip link: oculto pero visible al enfocar */
-.skip-link {
-  position: absolute;
-  left: -999px;
-  top: auto;
-  background: #fff;
-  padding: 8px;
-  border: 2px solid #000;
-  z-index: 100;
-}
-.skip-link:focus {
-  left: 10px;
-  top: 10px;
+:root {
+  font-family: Arial, sans-serif;
 }
 
-/* Foco visible en enlaces y botones */
-a:focus,
-button:focus {
-  outline: 3px solid blue;
-  outline-offset: 3px;
+/* ---- MOBILE FIRST ---- */
+body {
+  background: #fff;
+  color: #000;
+  padding: 8px;
+}
+
+/* Header */
+.site-header {
+  border: 2px solid #000;
+  padding: 12px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.logo {
+  color: red; /* en móvil: logo rojo */
+}
+
+nav ul {
+  list-style: none;
+  margin-top: 8px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 6px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  border: 1px solid #000;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+/* Banner (oculto en móvil) */
+.hero {
+  display: none; /* no se muestra en móvil */
+}
+
+/* Productos */
+.products {
+  display: grid;
+  grid-template-columns: 1fr; /* en móvil, 1 columna */
+  gap: 12px;
+}
+
+.products li {
+  border: 1px solid #000;
+  padding: 12px;
+  list-style: none;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  border: 2px solid #000;
+  margin-top: 12px;
+  padding: 12px;
+  text-align: center;
+}
+
+footer p {
+  color: blue; /* en móvil: footer azul */
+  font-weight: bold;
+}
+
+/* ---- DESKTOP ---- */
+@media (min-width: 601px) {
+  .logo {
+    color: initial; /* vuelve a negro */
+  }
+
+  footer p {
+    color: initial; /* vuelve a negro */
+  }
+
+  .hero {
+    display: block; /* en desktop: sí se muestra */
+    border: 1px dashed #000;
+    padding: 16px;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+
+  .products {
+    grid-template-columns: repeat(3, 1fr); /* en desktop: 3 columnas */
+  }
 }
